@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #a0ba96;
+    width: 100%;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    background-color: #30522a;
+    border:2px rgb(47, 198, 47) solid;
+}
+svg{
+    transform: translateX(10px);
+}
+/*Header*/
+#iconTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translate( 0px, 66px);
+}
+#home{
+    position: absolute;
+    left: 0;
+}
+#cl{
+    border:2px solid greenyellow;
+    border-radius: 15px;
+    padding: 12px;
+    color:chartreuse;
+}
+
+/*Titles*/
+#title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(250px);
+    text-align: center;
+}
+@import url( 'https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap' );
+#t1{
+    font-family: "Holtwood One SC", serif;
+    font-size: 20px;
+    color: #493232;
+}
+
+/*Main*/
+/*options*/
+#opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transform: translateY(320px);
+}
+.opc{
+    font-family: "Holtwood One SC", serif;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: white;
+    width: 280px;
+    padding:20px;
+}
+
+.opc:hover{
+    border:3px solid greenyellow;
+}
+
+/*Footer*/
+#footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    background-color: #30522a ;
+}
+.id{
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+}
+/*Media-Queries*/
+@media (min-width:320px) and (max-width: 380px) {
+    #iconTitle{
+    transform: translate( 13px, 20px);
+    }
+    #cl{
+        font-size: 15px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(10vh); 
+    }
+    #t1{
+        font-size: 18px;
+    }
+    #opcoes{
+        transform: translateY(14vh);
+    }
+    .opc{
+        font-size: 14px;
+        background-color: white;
+        width: 240px;
+        padding:18px;
+    }
+    .id{
+        font-size: 9px;
+    }
+}
+
+@media (min-width:381px) and (max-width: 484px){
+    #iconTitle{
+    transform: translate( 0px, 20px);
+    }
+    #cl{
+        font-size: 16px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(10vh); 
+    }
+    #t1{
+        font-size: 18px;
+    }
+    #opcoes{
+        transform: translateY(18vh);
+    }
+    .opc{
+        font-size: 14px;
+        background-color: white;
+        width: 240px;
+        padding:18px;
+    }
+    .id{
+        font-size: 9px;
+    }
+    svg{
+        width: 35px;
+        height: 25px;
+    }
+}
+@media (min-width: 485px) and (max-width: 600px){
+    #iconTitle{
+    transform: translate( 0px, 20px);
+    }
+    #cl{
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(12vh); 
+    }
+    #t1{
+        font-size: 19px;
+    }
+    #opcoes{
+        transform: translateY(19vh);
+    }
+    .opc{
+        font-size: 16px;
+        background-color: white;
+        width: 245px;
+        padding:18px;
+    }
+    .id{
+        font-size: 9px;
+    }
+    svg{
+        width: 35px;
+        height: 25px;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px){
+    #iconTitle{
+    transform: translate( 0px, 25px);
+    }
+    #cl{
+        font-size: 28px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(14vh); 
+    }
+    #t1{
+        font-size: 25px;
+    }
+    #opcoes{
+        transform: translateY(22vh);
+    }
+    .opc{
+        font-size: 18px;
+        background-color: white;
+        width: 300px;
+        padding:25px;
+    }
+    .id{
+        font-size: 11px;
+    }
+    svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+   #iconTitle{
+    transform: translate( 0px, 25px);
+    }
+    #cl{
+        font-size: 30px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(14vh); 
+    }
+    #t1{
+        font-size: 30px;
+    }
+    #opcoes{
+        transform: translateY(22vh);
+    }
+    .opc{
+        font-size: 22px;
+        background-color: white;
+        width: 350px;
+        padding:25px;
+    }
+    .id{
+        font-size: 13px;
+    }
+    svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    #iconTitle{
+    transform: translate( 0px, 25px);
+    }
+    #cl{
+        font-size: 28px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(14vh); 
+    }
+    #t1{
+        font-size: 25px;
+    }
+    #opcoes{
+        transform: translateY(20vh);
+    }
+    .opc{
+        font-size: 18px;
+        background-color: white;
+        width: 300px;
+        padding:15px;
+    }
+    .id{
+        font-size: 8px;
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px){
+    #iconTitle{
+    transform: translate( 0px, 25px);
+    }
+    #cl{
+        font-size: 28px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(12vh); 
+    }
+    #t1{
+        font-size: 25px;
+    }
+    #opcoes{
+        transform: translateY(18vh);
+    }
+    .opc{
+        font-size: 18px;
+        background-color: white;
+        width: 300px;
+        padding:25px;
+    }
+    .id{
+        font-size: 9px;
+    }
+    svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px){
+    #iconTitle{
+    transform: translate( 0px, 25px);
+    }
+    #cl{
+        font-size: 28px;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(14vh); 
+    }
+    #t1{
+        font-size: 30px;
+    }
+    #opcoes{
+        transform: translateY(22vh);
+    }
+    .opc{
+        font-size: 20px;
+        background-color: white;
+        width: 350px;
+        padding:25px;
+    }
+    .id{
+        font-size: 12px;
+    }
+    svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (min-width: 1921px){
+   #iconTitle{
+    transform: translate( 0px, 25px);
+    }
+    #cl{
+        font-size: 35px;
+        border-radius: 25px;
+        padding: 5px;
+    }
+    #title{
+       transform: translateY(14vh); 
+    }
+    #t1{
+        font-size: 40px;
+    }
+    #opcoes{
+        transform: translateY(22vh);
+    }
+    .opc{
+        font-size: 30px;
+        background-color: white;
+        width: 380px;
+        padding:25px;
+    }
+    .id{
+        font-size: 14px;
+    }
+    svg{
+        width: 40px;
+        height: 40px;
+    }
+}

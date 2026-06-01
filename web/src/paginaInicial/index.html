@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ff0000">
+
+    <link rel="stylesheet" href="inicial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000">
+    <script>
+      if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+      }
+    </script> 
+
+    <title> Inicial </title>
+  </head>
+
+  <body>
+    <div id="nav">
+      <img src="/web/assets/Logo2.png" alt="">
+    </div>
+    <div id="main">  
+      </div>
+      <div id="title">
+        <h2 id="t1"> O melhor site para automatizar seus cálculos</h2>
+      </div>
+
+      <div id="principal">
+        <div id="button1">
+          <a href="../paginaInformações/informacoes.html">
+            <button id="bt1" > Sobre o site </button>
+          </a>
+
+          <p id="box1"> Clique aqui e saiba <br>mais sobre o site </p>
+        </div>
+
+        <div id="button2">
+          <a href="../paginaCalculos/calculos.html">
+            <button id="bt2"> Calcular </button>
+          </a>
+          <p id="box2"> Clique aqui para<br>realizar seus cálculos </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p class="id"> A Renan Maziero production </p>
+      <p class="id"> AgroCL © 2026 </p>
+    </div>
+  </body>
+</html>

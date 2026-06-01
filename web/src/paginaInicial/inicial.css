@@ -1,0 +1,361 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap' );
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #a0ba96;
+    width: 100%;
+    position: fixed;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    background-color: #30522a;
+    border:2px rgb(47, 198, 47) solid;
+}
+/*Titles*/
+#title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(300px);
+    text-align: center;
+}
+#t1{
+    width: 400px;
+    font-family: "Holtwood One SC", serif;
+    font-size: 18px;
+    color: #493232;
+}
+
+/*Main*/
+#principal{
+    display: flex; /*flex-direction: row;*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    
+}
+#button1{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(35vh); 
+}
+#bt1{
+    padding: 4.5px 34px;
+    font-size: 19px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 15px 15px 0px 0px;
+    border: red solid;
+}
+#bt1:hover{
+    border: darkslategrey solid; 
+}
+#box1{
+    white-space: nowrap;
+    padding: 19px;
+    font-size: 15px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 0px 15px;
+}
+
+#button2{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(35vh);
+} 
+#bt2{   
+    padding: 4px 51.6px; 
+    font-size: 19.5px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 15px 15px 0px 0px;
+    border: red solid;
+}
+#bt2:hover{
+    border: darkslategrey solid; 
+}
+#box2{
+    white-space: nowrap;
+    padding: 20.5px;
+    font-size: 13.5px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 15px 0px;
+}
+
+/*Footer*/
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #30522a ;
+}
+.id{
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+/*Media-Queries*/
+@media (min-width:320px) and (max-width: 379px) {
+    #title{
+        transform: translateY(160px);
+    }
+    #main{
+        transform: translateY(50px);
+    }
+    #principal{
+        flex-direction: column;
+        gap:15px;
+    }
+    #button1{
+        transform: translateY(25vh);
+    }
+    #button2{
+        transform: translateY(25vh);
+    }
+    #box1{
+        border-radius: 0px 0px 15px 15px ;
+    }
+    #box2{
+        border-radius: 0px 0px 15px 15px ;
+    }
+    #footer{
+        padding: 2px;
+    }
+    .id{
+        font-size: 8px;
+    }
+}
+@media (min-Height:550px) and (max-Height:665px){
+#title{
+        transform: translateY(100px);
+    }
+}
+@media (min-width:380px) and (max-width: 484px){
+    #title{
+        transform: translateY(180px);
+    }
+    #button1{
+        transform: translateY(35vh);
+    }
+    #button2{
+        transform: translateY(35vh);
+    }
+   
+}
+@media (min-width: 485px) and (max-width: 600px){
+    #title{
+        transform: translateY(190px);
+    }
+    #button1{
+        transform: translateY(35vh);
+    }
+    #button2{
+        transform: translateY(35vh);
+    }
+}
+@media (min-width: 601px) and (max-width: 768px){
+    #button1{
+        transform: translateY(35vh);
+    }
+    #button2{
+        transform: translateY(35vh);
+    }
+    #title{
+        transform: translateY(20vh);
+    }
+    #t1{
+    font-size: 30px;
+    }
+    #bt1{
+        padding: 4.5px 50px;
+        font-size: 25px;
+        border-radius: 15px 15px 0px 0px;
+        
+    }
+    #box1{
+        white-space: nowrap;
+        padding: 19px;
+        font-size: 25px;
+        border-radius: 0px 0px 0px 15px;
+    }
+    #bt2{   
+        padding: 4px 78px; 
+        font-size: 25px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    #box2{
+        white-space: nowrap;
+        padding: 19.5px;
+        font-size: 25px;
+        border-radius: 0px 0px 15px 0px;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    #tilte{
+        transform: translateY(vh);
+    }
+    #button1{
+        transform: translateY(40vh);
+    }
+    #button2{
+        transform: translateY(40vh);
+    }
+    #t1{
+    font-size: 30px;
+    }
+     #bt1{
+        padding: 4.5px 50px;
+        font-size: 25px;
+        border-radius: 15px 15px 0px 0px;
+        
+    }
+    #box1{
+        white-space: nowrap;
+        padding: 19px;
+        font-size: 25px;
+        border-radius: 0px 0px 0px 15px;
+    }
+    #bt2{   
+        padding: 4px 78px; 
+        font-size: 25px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    #box2{
+        white-space: nowrap;
+        padding: 19.5px;
+        font-size: 25px;
+        border-radius: 0px 0px 15px 0px;
+    }
+    .id{
+        font-size: 16px;
+    }
+
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    #button1{
+        transform: translateY(35vh);
+    }
+    #button2{
+        transform: translateY(35vh);
+    }
+    #title{
+        transform: translateY(20vh);
+    }
+    #t1{
+    font-size: 22px;
+    }
+    .id{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px){
+    #title{
+        transform: translateY(20vh);
+    }
+    #button1{
+        transform: translateY(35vh);
+    }
+    #button2{
+        transform: translateY(35vh);
+    }
+    #t1{
+    font-size: 27px;
+    }
+    .id{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1441px) and (max-width: 1920px){
+    #title{
+        transform: translateY(20vh);
+    }
+    #button1{
+        transform: translateY(30vh);
+    }
+    #button2{
+        transform: translateY(30vh);
+    }
+    #t1{
+    font-size: 28px;
+    }
+    #bt1{
+        padding: 4.5px 50px;
+        font-size: 25px;
+        border-radius: 15px 15px 0px 0px;
+        
+    }
+    #box1{
+        white-space: nowrap;
+        padding: 19px;
+        font-size: 25px;
+        border-radius: 0px 0px 0px 15px;
+    }
+    #bt2{   
+        padding: 4px 78px; 
+        font-size: 25px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    #box2{
+        white-space: nowrap;
+        padding: 19.5px;
+        font-size: 25px;
+        border-radius: 0px 0px 15px 0px;
+    }
+    .id{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1921px){
+    #title{
+        transform: translateY(10vh);
+    }
+    #button1{
+        transform: translateY(25vh);
+    }
+    #button2{
+        transform: translateY(25vh);
+    }
+    #t1{
+    font-size: 45px;
+    }
+    #bt1{
+        padding: 4.5px 50px;
+        font-size: 50px;
+        border-radius: 15px 15px 0px 0px;
+        
+    }
+    #box1{
+        white-space: nowrap;
+        padding: 19px;
+        font-size: 25px;
+        border-radius: 0px 0px 0px 15px;
+    }
+    #bt2{   
+        padding: 4px 78px; 
+        font-size: 50px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    #box2{
+        white-space: nowrap;
+        padding: 19.5px;
+        font-size: 25px;
+        border-radius: 0px 0px 15px 0px;
+    }
+    .id{
+        font-size: 16px;
+    }
+}

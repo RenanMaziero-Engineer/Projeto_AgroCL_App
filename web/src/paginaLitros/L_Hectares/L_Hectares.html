@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ff0000">
+
+    <link rel="stylesheet" href="L_Hectares.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+
+    <title> L_Hectares </title>
+  </head>
+
+  <body>
+    <div id="nav">
+      <img src="/web/assets/Logo2.png" alt="">
+    </div>
+    <div id="iconTitle">
+      <a id="home" href="/web/src/paginaInicial/index.html">
+        <svg width="24" height="24" viewBox="0 0 24 20">
+          <path d="M3 10L12 3L21 10V21H14V14H10V21H3Z" fill="white"/>
+        </svg>
+      </a>
+
+      <h2 id="cl"> Litros </h2>
+    </div>
+
+    <div id="area">
+      <div id="area2">
+        <div id="input1">
+          <label for="LT">Litros</label>
+          <input id="LT" placeholder="Digitar" type="number">
+          <small> Dosagem recomendada<br>na bula. </small>
+        </div>
+        <div id="input2">
+          <label for="H">Hectares</label>
+          <input id="H" placeholder="Digitar" type="number">
+          <small> Quantidade de Hectares<br>recomendado na bula. </small>
+        </div>
+      </div>
+
+      <div id="area3">
+        <div class="input3">
+          <input id="Q" placeholder="Digitar" type="number">
+          <small> <br> Quantidade de Hectares<br>que será aplicado. </small>
+        </div>
+        <div id="btH">
+          <button id="bt" onclick="window.location.href='../L_Litros/L_Litros.html'"> Litros </button>
+          <small> <br>Calcular para Litros. </small>
+        </div>
+      </div>
+    </div>
+
+    <div id="calRes">
+      <button id="cal"  onclick="calcular()" >calcular</button>
+      <div id="res">
+        <p id="rs"></p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p class="id"> A Renan Maziero production </p>
+      <p class="id"> AgroCL © 2026 </p>
+    </div>
+    <script src="../L_Hectares/index.js"></script>
+  </body>
+</html>
